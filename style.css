@@ -1,0 +1,314 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tipografia */
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%233498db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.1"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* Seções */
+.hero-section {
+    background-color: #3498db; /* Azul primário */
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo para o logo no cabeçalho */
+.header-logo {
+    max-width: 200px; /* Ajuste o tamanho máximo do logo conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Adiciona um pouco de espaço abaixo do logo */
+    display: block; /* Garante que o margin: auto para centralização funcione */
+    margin-left: auto; /* Centraliza o logo */
+    margin-right: auto; /* Centraliza o logo */
+}
+
+.content-section {
+    padding: 40px 0;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.content-section:last-of-type {
+    border-bottom: none;
+}
+
+.intro-section h2,
+.benefits-section h2,
+.audience-section h2 {
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Formulário e Download */
+.form-section {
+    background-color: #ecf0f1; /* Cinza claro */
+    padding: 60px 0;
+}
+
+.download-container {
+    display: flex;
+    flex-direction: column; /* Padrão para mobile */
+    align-items: center;
+    gap: 40px;
+}
+
+.ebook-mockup img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.form-wrapper {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%; /* Ajuste para mobile */
+    max-width: 450px; /* Largura máxima para o formulário */
+}
+
+.form-wrapper h2 {
+    margin-bottom: 25px;
+    font-size: 1.6em;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Botões */
+.btn {
+    display: block; /* Para que ocupem a largura total */
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn {
+    background-color: #27ae60; /* Verde vibrante */
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: #e67e22; /* Laranja de destaque */
+    color: white;
+    margin-top: 20px;
+}
+
+.secondary-btn:hover {
+    background-color: #f39c12;
+    transform: translateY(-2px);
+}
+
+/* Seção de Consulta (CTA) */
+.cta-consultation-section {
+    background-color: #34495e; /* Azul escuro */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-consultation-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50; /* Azul quase preto */
+    color: #bdc3c7;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a seção de contato no rodapé */
+.footer-contact {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+}
+.footer-contact p {
+    margin-bottom: 5px;
+}
+.footer-contact a {
+    color: #25d366; /* Verde WhatsApp */
+    font-weight: 600;
+}
+
+
+/* Estilo para o botão de WhatsApp flutuante */
+.whatsapp-float {
+    position: fixed; /* Fixa o botão na tela */
+    width: 60px;
+    height: 60px;
+    bottom: 30px; /* Distância da parte inferior da tela */
+    right: 30px; /* Distância da lateral direita da tela */
+    background-color: #25d366; /* Cor verde do WhatsApp */
+    color: #FFF;
+    border-radius: 50px; /* Torna-o redondo */
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000; /* Garante que ele fique acima de outros elementos */
+    display: flex; /* Para centralizar o ícone/imagem */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-float img {
+    width: 35px; /* Tamanho da imagem do ícone do WhatsApp */
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E; /* Cor mais escura ao passar o mouse */
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .download-container {
+        flex-direction: row; /* Volta para linha em telas maiores */
+        justify-content: center;
+    }
+
+    .ebook-mockup {
+        flex: 1;
+        max-width: 40%;
+    }
+
+    .form-wrapper {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    /* Ajustes para telas menores, se o logo ficar muito grande */
+    .header-logo {
+        max-width: 150px; /* Reduz o tamanho do logo em telas menores */
+    }
+
+    /* Ajustes para telas menores do WhatsApp */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
+    .header-logo {
+        max-width: 200px; /* Tamanho do logo em telas maiores */
+    }
+}
